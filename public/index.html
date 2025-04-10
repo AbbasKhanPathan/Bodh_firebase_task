@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firebase Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>📝 Firebase Notes</h2>
+
+    <button id="loginBtn">Sign In with Google</button>
+    <div id="userInfo"></div>
+
+    <div class="profile-section">
+      <select id="sexInput">
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="number" id="ageInput" placeholder="Enter Age" />
+      <button id="saveProfileBtn">Save Profile</button>
+    </div>
+
+    <div class="note-section">
+      <input type="text" id="noteInput" placeholder="Enter a note" />
+      <button id="saveNoteBtn">Add Note</button>
+    </div>
+
+    <h3>Your Notes</h3>
+    <ul id="noteList"></ul>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
